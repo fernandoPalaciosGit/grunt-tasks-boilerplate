@@ -1,0 +1,9 @@
+{
+	"name": "Theypoll",
+    	"private": true,
+	"dependencies": {
+		"normalize-css": "*",    
+		"jquery": "*",
+		"bootstrap": "*"
+	}
+}

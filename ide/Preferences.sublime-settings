@@ -1,0 +1,78 @@
+{
+	"auto_complete": false,
+	"auto_indent": true,
+	"bold_folder_labels": true,
+	"caret_extra_width": 2,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",
+	"default_encoding": "UTF-8",
+	"default_line_ending": "unix",
+	"detect_indentation": false,
+	"detect_slow_plugins": true,
+	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"*.orig",
+		"*.rej",
+		"*.ep"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		"CVS",
+		"bin",
+		"dist",
+		"public",
+		"target",
+		"build",
+		".hg",
+		".idea",
+		"vendors",
+		"node_modules",
+		"bower_components"
+	],
+	"font_face": "Inconsolata",
+	"font_options": [],
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 4,
+	"line_padding_top": 4,
+	"ruler":
+	[
+		100
+	],
+	"save_on_focus_lost": true,
+	"tab_size": 2,
+	"theme": "Default.sublime-theme",
+	"trailing_spaces_include_current_line": false,
+	"translate_tabs_to_spaces": false,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": false,
+	"word_wrap": "true"
+}

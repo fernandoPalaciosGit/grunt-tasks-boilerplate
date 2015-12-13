@@ -1,0 +1,17 @@
+{
+	"apply_syntax_extensions":
+	[
+		".gemrc",
+		"yml.dist",
+		"yml"
+	],
+	"extensions":
+	[
+		"yml",
+		"yml.dist",
+		".gemrc"
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"use_tab_stops": true
+}
