@@ -1,4 +1,5 @@
 module.exports = {
+	'documentation': 'http://babeljs.io/docs/usage/options',
 	options: {
 		sourceMap: false
 	},

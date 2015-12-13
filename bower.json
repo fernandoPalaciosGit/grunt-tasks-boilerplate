@@ -1,8 +1,8 @@
 {
-	"name": "Theypoll",
-    	"private": true,
+	"name": "grunt-tasks-boilerplate",
+	"private": true,
 	"dependencies": {
-		"normalize-css": "*",    
+		"normalize-css": "*",
 		"jquery": "*",
 		"bootstrap": "*"
 	}

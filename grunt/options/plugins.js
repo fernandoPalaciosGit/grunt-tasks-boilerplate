@@ -12,7 +12,7 @@
 			development: {
 				host: '127.0.0.1',
 				port: '80',
-				root: 'theypoll',
+				root: 'nameProject',
 				publicDir: 'public'
 			},
 			production: {
@@ -30,6 +30,12 @@
 				'Gruntfile.js',
 				'grunt/**/*.js',
 				'application/**/*.js'
+			],
+			linterJson: [
+				'grunt/**/*.json',
+				'application/**/*.json',
+				'.*rc',
+				'*.json'
 			],
 			compileJs: {
 				cwd: 'application/js',

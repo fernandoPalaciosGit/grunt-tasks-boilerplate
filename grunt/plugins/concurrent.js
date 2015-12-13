@@ -6,7 +6,8 @@ module.exports = {
 		tasks: [
 			'newer:jshint:<%= taskEnvironment %>',
 			'newer:jscs:<%= taskEnvironment %>',
-			'newer:eslint:<%= taskEnvironment %>'
+			'newer:eslint:<%= taskEnvironment %>',
+			'newer:jsonlint:<%= taskEnvironment %>'
 		]
 	},
 	jsCompile: {

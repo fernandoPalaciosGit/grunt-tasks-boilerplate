@@ -1,4 +1,5 @@
 module.exports = {
+	'documentation': 'http://jscs.info/rules',
 	options: {
 		config: '.jscsrc',
 		verbose: false,
