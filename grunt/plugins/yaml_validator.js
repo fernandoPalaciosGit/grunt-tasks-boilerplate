@@ -1,6 +1,6 @@
 module.exports = {
 	options: {},
 	dev: {
-		src: '<%= projectPaths.validateJson %>'
+		src: '<%= projectPaths.validateYaml %>'
 	}
 };

@@ -37,11 +37,14 @@
 			linterJsEs6: [
 				'<%= projectPaths.development.application %>/**/*.es6.js'
 			],
-			linterJson: [
+			validateJson: [
 				'grunt/**/*.json',
 				'grunt/**/.{*rc,*rc-es6}',
 				'<%= projectPaths.development.application %>/**/*.json',
 				'bower.json'
+			],
+			validateYaml: [
+				'grunt/**/.*yml'
 			],
 			compileJs: {
 				cwd: '<%= projectPaths.development.application %>/js',

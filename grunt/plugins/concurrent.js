@@ -2,9 +2,14 @@ module.exports = {
 	options: {
 		logConcurrentOutput: false
 	},
+	validator: {
+		tasks: [
+			'newer:yaml_validator:<%= taskEnvironment %>',
+			'newer:jsonlint:<%= taskEnvironment %>'
+		]
+	},
 	jsLinters: {
 		tasks: [
-			'newer:jsonlint:<%= taskEnvironment %>',
 			'newer:jshint:<%= taskEnvironment %>',
 			'newer:jshint:<%= taskEnvironment %>Es6',
 			'newer:jscs:<%= taskEnvironment %>',

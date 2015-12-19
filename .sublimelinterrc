@@ -1,0 +1,7 @@
+{
+	"linters": {
+		"sass": {
+			"@disable": true
+		}
+	}
+}

@@ -9,6 +9,7 @@ module.exports = function (grunt) {
 		.setDescription('Linters for code: JSHINT, JSCS, ESLINT, SASSLINT')
 		.setTaskEvironment('dev')
 		.setPluginTasks([
+			'concurrent:validator',
 			'concurrent:cssLinters',
 			'concurrent:jsLinters'
 		])

@@ -27,6 +27,7 @@
     "babel-preset-es2015": "~6.3.13",
     "grunt-sass-lint": "git+https://github.com/fernandoPalaciosGit/grunt-sass-lint.git",
     "grunt-jsonlint": "~1.0.6",
-    "babel-plugin-transform-export-extensions": "~6.3.13"
+    "babel-plugin-transform-export-extensions": "~6.3.13",
+    "grunt-yaml-validator": "~0.7.3"
   }
 }
