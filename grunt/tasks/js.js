@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 	task.setName(path.basename(module.filename, '.js'))
 		.setDescription('Deployment Javascript.')
 		.setTaskEvironment('dev')
-		.setSubtasks([
+		.setPluginTasks([
 			'clean:devJs',
 			'concurrent:jsLinters',
 			'concurrent:jsCompile'

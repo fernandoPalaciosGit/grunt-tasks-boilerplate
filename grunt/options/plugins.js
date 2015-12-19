@@ -12,41 +12,47 @@
 			development: {
 				host: '127.0.0.1',
 				port: '80',
-				root: 'nameProject',
-				publicDir: 'public'
+				root: 'grunt-tasks-boilerplate',
+				publicDir: 'public', // for deployment in local environment
+				application: 'application' // for develope
 			},
 			production: {
 				host: 'dev.host.com',
 				port: '80',
 				root: '/',
-				publicDir: 'dist'
+				publicDir: 'dist' // for deployment in real environment
 			},
 			apache: {
 				unix: '/opt/lampp/lampp',
 				windows: ''
 			},
 			git: '.git/hooks/',
+			gruntRuntimeConfig: 'grunt/runtime-config',
 			linterJs: [
 				'Gruntfile.js',
 				'grunt/**/*.js',
-				'application/**/*.js'
+				'<%= projectPaths.development.application %>/**/*.js',
+				'!<%= projectPaths.development.application %>/**/*.es6.js'
+			],
+			linterJsEs6: [
+				'<%= projectPaths.development.application %>/**/*.es6.js'
 			],
 			linterJson: [
 				'grunt/**/*.json',
-				'application/**/*.json',
-				'.*rc',
-				'*.json'
+				'grunt/**/.{*rc,*rc-es6}',
+				'<%= projectPaths.development.application %>/**/*.json',
+				'bower.json'
 			],
 			compileJs: {
-				cwd: 'application/js',
+				cwd: '<%= projectPaths.development.application %>/js',
 				dirDev: '<%= projectPaths.development.publicDir %>/js',
 				dirProd: '<%= projectPaths.production.publicDir %>/js'
 			},
 			linterCss: [
-				'application/style/**/*.scss'
+				'<%= projectPaths.development.application %>/style/**/*.scss'
 			],
 			compileCss: {
-				cwd: 'application/style/include',
+				cwd: '<%= projectPaths.development.application %>/style/include',
 				dirDev: '<%= projectPaths.development.publicDir %>/style',
 				dirProd: '<%= projectPaths.production.publicDir %>/style'
 			}

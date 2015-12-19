@@ -1,60 +1,45 @@
 module.exports = function (grunt) {
 	'use strict';
 
-	var initTask = function () {
-				grunt.log.writeln(this.description);
-				grunt.task.run(this.subtasks);
-			},
-
-			GruntTask = function () {
+	var GruntTask = function () {
 				this.name = 'default';
 				this.description = 'There is no ' + this.name + ' task.';
-				this.subtasks = [];
-				this.callback = initTask.bind(this);
+				this.pluginTasks = [];
+				this.environment = 'env';
 			};
 
-	GruntTask.prototype.setName = function (name) {
-		this.name = name;
+	GruntTask.prototype.setName = function (n) {
+		this.name = n;
 
 		return this;
 	};
 
-	GruntTask.prototype.setDescription = function (description) {
-		this.description = description;
+	GruntTask.prototype.setDescription = function (desc) {
+		this.description = desc;
 
 		return this;
 	};
 
-	GruntTask.prototype.setSubtasks = function (subtasks) {
-		this.subtasks = subtasks;
+	GruntTask.prototype.setPluginTasks = function (plugin) {
+		this.pluginTasks = plugin;
 
 		return this;
 	};
 
 	GruntTask.prototype.setTaskEvironment = function (env) {
-		this.setCallbackTask(function () {
-			grunt.config.set('taskEnvironment', env);
-		});
-
-		return this;
-	};
-
-	/**
-	 * Append functionality for each task.
-	 * @param {Function} cb clousure to task scope.
-	 */
-	GruntTask.prototype.setCallbackTask = function (newCallbackTask) {
-		var oldCallbackTask = this.callback;
-		this.callback = function () {
-			oldCallbackTask();
-			newCallbackTask();
-		};
+		this.environment = env;
 
 		return this;
 	};
 
 	GruntTask.prototype.register = function () {
-		grunt.registerTask(this.name, this.description, this.callback);
+		var callbackTask = function () {
+			grunt.config.set('taskEnvironment', this.environment);
+			grunt.log.writeln(this.description);
+			grunt.task.run(this.pluginTasks);
+		};
+
+		grunt.registerTask(this.name, this.description, callbackTask.bind(this));
 	};
 
 	return GruntTask;

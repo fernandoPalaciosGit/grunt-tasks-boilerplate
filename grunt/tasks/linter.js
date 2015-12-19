@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 	task.setName(path.basename(module.filename, '.js'))
 		.setDescription('Linters for code: JSHINT, JSCS, ESLINT, SASSLINT')
 		.setTaskEvironment('dev')
-		.setSubtasks([
+		.setPluginTasks([
 			'concurrent:cssLinters',
 			'concurrent:jsLinters'
 		])

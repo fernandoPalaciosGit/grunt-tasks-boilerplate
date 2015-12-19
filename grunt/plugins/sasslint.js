@@ -1,6 +1,10 @@
 module.exports = {
+	documentation: [
+		'https://github.com/sasstools/sass-lint/tree/develop/docs/rules',
+		'github.com/CSSLint/csslint/wiki/Rules'
+	],
 	options: {
-		configFile: '.sass-lint.yml',
+		configFile: '<%= projectPaths.gruntRuntimeConfig %>/.sass-lint.yml',
 		force : false
 	},
 	dev: '<%= projectPaths.linterCss %>',

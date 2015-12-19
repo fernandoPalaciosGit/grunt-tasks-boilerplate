@@ -1,7 +1,7 @@
 module.exports = {
-	'documentation': 'http://jscs.info/rules',
+	documentation: 'http://jscs.info/rules',
 	options: {
-		config: '.jscsrc',
+		config: '<%= projectPaths.gruntRuntimeConfig %>/.jscsrc',
 		verbose: false,
 		fix: false
 	},

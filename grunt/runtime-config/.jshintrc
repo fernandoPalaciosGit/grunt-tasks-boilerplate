@@ -27,14 +27,10 @@
 	"maxstatements": 10,
 	"maxparams": 4,
 	"noarg": true,
-	"esnext": true,
+	"esnext": false,
 	"node": true,
 	"jquery": true,
 	"browser": true,
-	"mocha": true,
 	"globals": {
-		"io": false,
-		"expect": false,
-		"define": false
 	}
 }

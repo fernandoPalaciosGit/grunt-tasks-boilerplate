@@ -4,7 +4,5 @@ module.exports = function (grunt) {
 	var GruntTask = require('../GruntTask')(grunt),
 			task = new GruntTask();
 
-	task
-		.setTaskEvironment('dev')
-		.register();
+	task.register();
 };

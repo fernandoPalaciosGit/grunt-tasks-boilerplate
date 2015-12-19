@@ -1,13 +1,11 @@
 module.exports = {
-	'documentation': 'http://babeljs.io/docs/usage/options',
-	options: {
-		sourceMap: false
-	},
+	documentation: 'http://babeljs.io/docs/usage/options',
+	options: '<%= projectPaths.gruntRuntimeConfig %>/.babelrc',
 	dev: {
 		files: [{
 			expand: true,
 			cwd: '<%= projectPaths.compileJs.cwd %>',
-			src: ['**/*.{js,es6}'],
+			src: ['**/*es6.js'],
 			extDot: 'last',
 			dest: '<%= projectPaths.compileJs.dirDev %>',
 			ext: '.js'
@@ -17,7 +15,7 @@ module.exports = {
 		files: [{
 			expand: true,
 			cwd: '<%= projectPaths.compileJs.cwd %>',
-			src: ['**/*.{js,es6}'],
+			src: ['**/*es6.js'],
 			extDot: 'last',
 			dest: '<%= projectPaths.compileJs.dirProd %>',
 			ext: '.js'

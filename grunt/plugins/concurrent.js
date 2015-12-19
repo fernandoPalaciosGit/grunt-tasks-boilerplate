@@ -4,10 +4,12 @@ module.exports = {
 	},
 	jsLinters: {
 		tasks: [
+			'newer:jsonlint:<%= taskEnvironment %>',
 			'newer:jshint:<%= taskEnvironment %>',
+			'newer:jshint:<%= taskEnvironment %>Es6',
 			'newer:jscs:<%= taskEnvironment %>',
 			'newer:eslint:<%= taskEnvironment %>',
-			'newer:jsonlint:<%= taskEnvironment %>'
+			'newer:eslint:<%= taskEnvironment %>Es6'
 		]
 	},
 	jsCompile: {

@@ -38,3 +38,8 @@
 
 ####grunt shell:stopServer
 - **Usuage**: stop development servers
+
+##System requirements
+- javascript Ecma2015 files : *.ec6.js
+- deployment sources: /public
+- distribution sources: /dist
