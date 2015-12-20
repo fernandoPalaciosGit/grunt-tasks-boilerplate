@@ -1,6 +1,8 @@
 module.exports = {
 	documentation: 'http://babeljs.io/docs/usage/options',
-	options: '<%= projectPaths.gruntRuntimeConfig %>/.babelrc',
+	options: {
+		babelrc: '<%= projectPaths.gruntRuntimeConfig %>/.babelrc'
+	},
 	dev: {
 		files: [{
 			expand: true,

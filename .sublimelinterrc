@@ -1,5 +1,17 @@
 {
 	"linters": {
+		"eslint": {
+			"@disable": true
+		},
+		"htmlhint": {
+			"@disable": true
+		},
+		"jshint": {
+			"@disable": true
+		},
+		"php": {
+			"@disable": true
+		},
 		"sass": {
 			"@disable": true
 		}

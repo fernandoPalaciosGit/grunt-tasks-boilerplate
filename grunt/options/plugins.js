@@ -41,7 +41,8 @@
 				'grunt/**/*.json',
 				'grunt/**/.{*rc,*rc-es6}',
 				'<%= projectPaths.development.application %>/**/*.json',
-				'bower.json'
+				'bower.json',
+				'.*rc'
 			],
 			validateYaml: [
 				'grunt/**/.*yml'

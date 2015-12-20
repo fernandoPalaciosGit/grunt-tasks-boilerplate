@@ -10,6 +10,7 @@ module.exports = function (grunt) {
 		.setTaskEvironment('dist')
 		.setPluginTasks([
 			'clean:dist',
+			'concurrent:validator',
 			'concurrent:jsLinters',
 			'concurrent:jsCompile',
 			'concurrent:jsCompress',
